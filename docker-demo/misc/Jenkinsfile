@@ -1,4 +1,4 @@
-node (label: contdocker') {
+node ('contdocker') {
    def commit_id
    stage('Preparation') {
      checkout scm
