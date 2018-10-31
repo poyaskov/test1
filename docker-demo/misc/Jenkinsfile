@@ -12,7 +12,7 @@ node ('contdocker') {
      }
    }
    stage('docker build/push') {
-     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
+     docker.withRegistry('https://index.docker.io/v1/', 'poyaskov') {
        def app = docker.build("poyaskov/test1:${commit_id}", '.').push()
      }
    }
